@@ -1,0 +1,7 @@
+services:
+  - type: cron
+    name: wakacje-scraper
+    runtime: python
+    schedule: "@daily"
+    buildCommand: ""
+    startCommand: python main.py
