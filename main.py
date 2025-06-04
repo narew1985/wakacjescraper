@@ -12,9 +12,8 @@ MAX_PRICE = 1200
 MEAL = "AI"  # AI = All Inclusive
 ADULTS = 1
 
-# E-mail konfiguracja
-EMAIL = "kamilczyzak1985@gmail.com"  # <-- PODMIEN
-APP_PASSWORD = "zbki npcf iwhd bdvr"  # <-- PODMIEN
+EMAIL = os.getenv("EMAIL")
+APP_PASSWORD = os.getenv("APP_PASSWORD")
 
 def send_email(subject, body):
     msg = MIMEText(body)
