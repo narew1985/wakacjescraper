@@ -52,7 +52,11 @@ def scrape_wakacje():
     options = Options()
     options.headless = True
 
-    driver = webdriver.Firefox(executable_path=GeckoDriverManager().install(), options=options)
+    from selenium.webdriver.firefox.service import Service
+
+    service = Service(GeckoDriverManager().install())
+    driver = webdriver.Firefox(service=service, options=options)
+
 
     url = "https://www.wakacje.pl/wczasy/?all-inclusive,dla-singli,tanio&src=fromSearch"
     driver.get(url)
