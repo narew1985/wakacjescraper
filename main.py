@@ -9,7 +9,7 @@ import datetime
 
 # Parametry wyszukiwania
 MAX_PRICE = 1200
-MEAL = "AI"  # skrót dla "All inclusive" w URL
+MEAL = "AI"  # AI = All Inclusive
 ADULTS = 1
 
 # E-mail konfiguracja
