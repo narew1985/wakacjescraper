@@ -13,8 +13,19 @@ MEAL = "AI"  # AI = All Inclusive
 ADULTS = 1
 
 import os
+
 EMAIL = os.getenv("EMAIL")
 APP_PASSWORD = os.getenv("APP_PASSWORD")
+
+if EMAIL is None:
+    print("EMAIL is not set!")
+else:
+    print(f"EMAIL is set to: {EMAIL}")
+
+if APP_PASSWORD is None:
+    print("APP_PASSWORD is not set!")
+else:
+    print("APP_PASSWORD is set.")
 
 def send_email(subject, body):
     msg = MIMEText(body)
