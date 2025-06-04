@@ -12,6 +12,7 @@ MAX_PRICE = 1200
 MEAL = "AI"  # AI = All Inclusive
 ADULTS = 1
 
+import os
 EMAIL = os.getenv("EMAIL")
 APP_PASSWORD = os.getenv("APP_PASSWORD")
 
